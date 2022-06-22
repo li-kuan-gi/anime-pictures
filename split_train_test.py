@@ -15,7 +15,8 @@ def split(root_name):
         train_dir.mkdir()
         test_dir.mkdir()
 
-        for file_path in random.sample(list(char_dir.iterdir()), 80):
+        files = list(char_dir.iterdir())
+        for file_path in random.sample(files, len(files)*8//10):
             *_, file_name = file_path.parts
             shutil.move(file_path, train_dir / file_name)
 

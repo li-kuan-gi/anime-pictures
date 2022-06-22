@@ -6,10 +6,12 @@ The folder structure is as following:
 
 where **phase-folder** is either 'train' or 'test'.
 
-One can upload a **work-folder** of the following structure:
+One can use
+
+`python split_train_test.py --root=name-of-the-work-folder`
+
+to change a **work-folder** of the following structure:
 
 **character-folder / img-file**
 
-and then use
-
-`python split_train_test.py --root=work-folder`
+into the required structure of this repo.
